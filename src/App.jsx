@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import HomePage from "../src/Pages/HomePage"
-import './App.css'
+import React from 'react'
+import Navbar from './Components/Home/Navbar'
 
-function App() {
-
-
+const App = () => {
   return (
-    <HomePage/>
+    <div>
+      <Navbar/>
+    </div>
   )
-
 }
 
 export default App
