@@ -11,27 +11,28 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const FooterPage = () => {
   return (
-    <div>
+    <div className="p-0">
       <div className="w-full mt-[10rem] bg-black flex flex-col justify-start">
-        <div className="w-full flex flex-row justify-start">
+        <div className="w-full flex flex-col justify-start">
           <div className="w-[28%] flex flex-col gap-8 px-[5rem] pt-[5rem] pb-[0rem] items-center">
-            <div className="flex flex-row gap-2 items-center">
+            <div className="relative w-[6rem]">
               <img
-                className="w-20 h-20 rounded-full"
+                className=" rounded-full ml-1 absolute top-[-4rem] left-[ 2.3rem]"
                 src={FooterLogo}
                 alt="footer-logo"
               />
-              <h1 className="text-[white] flex flex-col items-center">
-                <span className="text-[#ff9637] text-[40px] border-b-[3px] border-b-orange-400 ">
+            </div>
+            <div className="relative">
+              <h1 className="text-[white] flex flex-row items-center w-full">
+                <span className="text-[#ff9637] text-[27px] border-b-[3px] border-b-orange-400 absolute  top-[-6rem] font-semibold left-11 ">
                   SUGUNA
                 </span>
-                {/* <br />{" "} */}
-                <span className=" text-[#83acb0] font-medium">
+                <span className=" text-[#83acb0] font-semibold w-[20rem] absolute  top-[-3rem] left-11">
                   POLYTECHNIC COLLEGE
                 </span>
               </h1>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-row  items-center gap-3 ml-[12rem]">
               <div className="">
                 <FaFacebookF className="bg-white hover:bg-[#ff9637] hover:text-white cursor-pointer w-12 h-12 p-3 text-[#ff9637] rounded-full hover:scale-[0.9] transition-all delay-100"></FaFacebookF>
               </div>
@@ -46,14 +47,14 @@ const FooterPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[23%] p-[5rem] pt-[4rem] pb-[3rem] ">
-            <h1 className="text-white text-[2rem] font-bold pb-2">
+          <div className="w-[full] text-center p-10 relative">
+            <h1 className="text-[#ff9637] text-[1.6rem] font-bold pb-1 absolute left-9">
               Quick Links
             </h1>
-            <ul className="text-white text-[20px]  ">
+            <ul className="text-white text-[16px] flex flex-col  justify-center items-start absolute top-[6rem] ">
               <li className=" hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
-                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms]"
+                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] "
                   href=""
                 >
                   <IoIosArrowForward></IoIosArrowForward>About Us
@@ -93,8 +94,8 @@ const FooterPage = () => {
               </li>
             </ul>
           </div>
-          <div className="w-[24%] p-[5.5rem] pt-[7rem] pb-[3rem]">
-            <ul className="text-white text-[20px] ">
+          <div className="w-[full] mt-[9rem] ">
+            <ul className="text-white text-[16px] p-9">
               <li className="hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
                   className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms]"
@@ -138,14 +139,14 @@ const FooterPage = () => {
               </li>
             </ul>
           </div>
-          <div className="w-[25%] p-[3rem] pt-[4rem] pb-[3rem]">
-            <h1 className="text-[white] text-[2rem] font-bold pb-2">
+          <div className="w-[full] p-[3rem] pt-[4rem] pb-[3rem]">
+            <h1 className=" text-[1.6rem] font-bold pb-2 text-[#ff9637]">
               Our Institutions
             </h1>
-            <ul className="text-[white] text-[20px]">
+            <ul className="text-[white] text-[14px]full w-">
               <li className="hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
-                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms]"
+                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] w-[15rem]"
                   href=""
                 >
                   <IoIosArrowForward></IoIosArrowForward>Suguna College of Arts
@@ -154,7 +155,7 @@ const FooterPage = () => {
               </li>
               <li className="hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
-                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms]"
+                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] w-[15rem]"
                   href=""
                 >
                   <IoIosArrowForward></IoIosArrowForward>Suguna College of
@@ -163,7 +164,7 @@ const FooterPage = () => {
               </li>
               <li className="hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
-                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms]"
+                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] w-[15rem]"
                   href=""
                 >
                   <IoIosArrowForward></IoIosArrowForward>Suguna PIP School
@@ -171,7 +172,7 @@ const FooterPage = () => {
               </li>
               <li className="hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
-                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms]"
+                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] w-[15rem]"
                   href=""
                 >
                   <IoIosArrowForward></IoIosArrowForward>Suguna Innovation
@@ -181,43 +182,43 @@ const FooterPage = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full flex flex-row justify-evenly items-center pb-[3.5rem]">
-          <div className="flex justify-around items-center gap-2  ">
-            <IoCall className="text-[#ff9637] text-[3rem]"></IoCall>
+        <div className="w-full flex flex-col gap-5 items-start pb-[3.5rem] ml-0">
+          <div className="flex justify-center items-center gap-2  ">
+            <IoCall className="text-[#ff9637] text-[1rem] ml-12"></IoCall>
             <div>
-              <span className="text-[white] text-[20px]">+91 8870008623</span>
+              <span className="text-[white] text-[14px]">+91 8870008623</span>
               <br />
-              <span className="text-[white] text-[20px]">+91 9600860934</span>
+              <span className="text-[white] text-[14px]">+91 9600860934</span>
             </div>
           </div>
           <div className=" flex items-center gap-2 ">
-            <div className="flex items-center gap-2">
-              <MdEmail className="text-[#ff9637] text-[3rem] "></MdEmail>
+            <div className="flex items-center gap-2 ml-12">
+              <MdEmail className="text-[#ff9637] text-[1rem] "></MdEmail>
               <div>
-                <span className="text-[white] text-[20px] ">
+                <span className="text-[white] text-[14px] ">
                   sugunapolytechniccollege@gmail.com
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex  items-center gap-2">
+          <div className="flex  items-center p-1 ml-12">
             <a href="https://www.google.com/maps/place/Suguna+Polytechnic+College/@11.0509439,77.0322591,15z/data=!4m6!3m5!1s0x3ba857bbffffffff:0xfaed96bd33545bc0!8m2!3d11.0509439!4d77.0322591!16s%2Fg%2F1tl7m4b8?entry=ttu">
-              <FaLocationDot className="text-[#ff9637] text-[3rem]"></FaLocationDot>
+              <FaLocationDot className="text-[#ff9637] text-[1rem]"></FaLocationDot>
             </a>
             <div className="items-center">
-              <span className="text-[white] font-bold text-[20px]">
+              <span className="text-[white] font-bold text-[14px]">
                 Kalapatti Main Rd, near Vinayaka Temple, GKD Nagar,
               </span>
               <br />
-              <span className="text-[white] text-[20px]">
+              <span className="text-[white] text-[14px]">
                 Nehru Nagar West, Coimbatore, Tamil Nadu - 641014
               </span>
             </div>
           </div>
         </div>
         <div className="w-full items-center text-center pt-[rem] pb-[3rem]">
-          <span className="text-[#979696] text-center items-center text-[20px]">
-            Copyright © 2023 Suguna Polytechnic College
+          <span className="text-[#979696] text-center items-center text-[14px]">
+            Copyright © 2024 Suguna Polytechnic College
           </span>
         </div>
       </div>

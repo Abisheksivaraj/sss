@@ -71,21 +71,21 @@ function Navbar() {
       <div className="w-full bg-white">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-start">
-            <div className="h-10 md:w-[5rem]">
-              <img src={logo} alt="" className="w-full h-auto object-contain" />
+            <div className="w-[3rem] md:w-[5rem] lg:w-[7rem] ">
+              <img src={logo} alt="" className="h-auto object-contain" />
             </div>
             <div className="font-bold text-[#f98d2f] uppercase flex flex-col justify-center mt-4 w-full">
-              <p className="text-13px text-[rgb(249,141,47)] md:text-[1.2rem]">
+              <p className="text-10px text-[rgb(249,141,47)] md:text-[1.2rem]">
                 Suguna
               </p>
-              <p className="text-13px text-83acb0 font-bold uppercase  text-[#83acb0] md:text-[1.2rem]">
+              <p className="text-10px text-83acb0 font-bold uppercase  text-[#83acb0] md:text-[1.2rem]">
                 Polytechnic College
               </p>
             </div>
           </div>
           <div>
             <a
-              className="hidden rounded-tl-3xl rounded-br-3xl text-white bg-[#f98d2f] hover:bg-[#83acb0] md:block p-2"
+              className="hidden rounded-tl-3xl rounded-br-3xl text-white bg-[#f98d2f] hover:bg-[#83acb0] md:block p-2 lg:text-[1.5rem]"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeUdQIqy8IW6vnzEX5GrmVE6bzUGXEOD0A5Zd4wOLXCwbV4EA/viewform"
             >
               For Admission
@@ -93,15 +93,15 @@ function Navbar() {
           </div>
         </div>
         <div className="relative" onClick={toggleMode}>
-          <ImMenu3 className="h-8 w-8 mt-auto lg:hidden absolute top-[-2.3rem] right-0 md:hidden" />
+          <ImMenu3 className="h-8 w-8 mt-auto lg:hidden absolute top-[-2rem] right-0 md:hidden" />
         </div>
 
         {/* navbar starts */}
 
-        <div className=" md:items-center md:justify-center md:mt-5 md:bg-[#f8e4d2] lg:bg-[#f8e4d2] h-10 relative">
+        <div className=" md:items-center md:justify-center md:mt-5 md:bg-[#f8e4d2] lg:bg-[#f8e4d2] h-10 relative z-10">
           <ul
-            className={`w-full absolute top-0 left-10px gap-5 font-normal text-18px cursor-pointer p-2 h-auto flex flex-col 
-            md:flex md:w-[full] md:flex-row md:items-center md:justify-between md:text-center rounded-md md:text-[0.9rem]  ${
+            className={`bg-[#f8e4d2]  w-full absolute top-0 left-10px gap-5 font-normal text-18px cursor-pointer p-2 h-auto flex flex-col 
+            md:flex md:w-[full] md:flex-row md:items-center md:justify-between md:text-center rounded-md md:text-[0.9rem] lg:text-[1.3rem] ${
               isMenuVisible ? "" : "hidden"
             }`}
           >
@@ -177,7 +177,7 @@ function Navbar() {
               Placements <GoChevronDown onClick={togglePlacementsDropDown} />
             </span>
             <ul
-              className={`bg-white w-[full] rounded-tl-none rounded-bl-md rounded-r-md p-2 md:absolute md:top-[2rem] md:bg-[#f8e4d2] md:text-start md:left-[33rem]  md:rounded-tl-none md:rounded-bl-md md:rounded-r-md md:p-2 ${
+              className={`bg-white w-[full] rounded-tl-none rounded-bl-md rounded-r-md p-2 md:absolute md:top-[2rem] md:bg-[#f8e4d2] md:text-start md:left-[33rem]  md:rounded-tl-none md:rounded-bl-md md:rounded-r-md md:p-2 lg:left-[42rem] lg:top-[2.2rem] ${
                 isPlacementsDropDownVisible ? "" : "hidden"
               }`}
             >
