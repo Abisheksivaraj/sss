@@ -11,19 +11,22 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const FooterPage = () => {
   return (
-    <div className="p-0">
-      <div className="w-full mt-[10rem] bg-black flex flex-col justify-start">
-        <div className="w-full flex flex-col justify-start">
+    <div className="">
+      <div
+        className="w-full mt-[10rem] bg-black flex flex-col justify-start
+      md:flex md:flex-col md:justify-center"
+      >
+        <div className="w-full flex flex-col justify-start md:flex md:flex-col md:justify-center">
           <div className="w-[28%] flex flex-col gap-8 px-[5rem] pt-[5rem] pb-[0rem] items-center">
-            <div className="relative w-[6rem]">
+            <div className="relative w-[6rem] md:flex">
               <img
                 className=" rounded-full ml-1 absolute top-[-4rem] left-[ 2.3rem]"
                 src={FooterLogo}
                 alt="footer-logo"
               />
             </div>
-            <div className="relative">
-              <h1 className="text-[white] flex flex-row items-center w-full">
+            <div className="relative md:flex md:items-center md:justify-center">
+              <h1 className="text-[white] flex flex-row items-center w-full md:flex md:items-center md:justify-center">
                 <span className="text-[#ff9637] text-[27px] border-b-[3px] border-b-orange-400 absolute  top-[-6rem] font-semibold left-11 ">
                   SUGUNA
                 </span>
@@ -32,7 +35,7 @@ const FooterPage = () => {
                 </span>
               </h1>
             </div>
-            <div className="flex flex-row  items-center gap-3 ml-[12rem]">
+            <div className="flex flex-row  items-center gap-3 ml-[12rem] md:flex md:items-center md:justify-center">
               <div className="">
                 <FaFacebookF className="bg-white hover:bg-[#ff9637] hover:text-white cursor-pointer w-12 h-12 p-3 text-[#ff9637] rounded-full hover:scale-[0.9] transition-all delay-100"></FaFacebookF>
               </div>
@@ -48,13 +51,16 @@ const FooterPage = () => {
             </div>
           </div>
           <div className="w-[full] text-center p-10 relative">
-            <h1 className="text-[#ff9637] text-[1.6rem] font-bold pb-1 absolute left-9">
+            <h1 className="text-[#ff9637] text-[1.6rem] font-bold pb-1 absolute left-9 md:left-[18rem] md:text-[1.9rem]">
               Quick Links
             </h1>
-            <ul className="text-white text-[16px] flex flex-col  justify-center items-start absolute top-[6rem] ">
-              <li className=" hover:text-[#ff9637] cursor-pointer pb-2">
+            <ul
+              className="text-white text-[16px] flex flex-col sm:justify-center items-start md:items-center absolute top-[6rem] 
+            md:flex md:flex-col  md:justify-center md:items-start "
+            >
+              <li className=" hover:text-[#ff9637] cursor-pointer pb-2 ">
                 <a
-                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] "
+                  className="flex items-center gap-2 hover:scale-[0.9] transition-all duration-[600ms] md:text-center"
                   href=""
                 >
                   <IoIosArrowForward></IoIosArrowForward>About Us
@@ -94,7 +100,7 @@ const FooterPage = () => {
               </li>
             </ul>
           </div>
-          <div className="w-[full] mt-[9rem] ">
+          <div className="w-[full] mt-[9rem] md:flex md:items-center md:justify-start ">
             <ul className="text-white text-[16px] p-9">
               <li className="hover:text-[#ff9637] cursor-pointer pb-2">
                 <a
@@ -182,7 +188,10 @@ const FooterPage = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-5 items-start pb-[3.5rem] ml-0">
+        <div
+          className="w-full flex flex-col gap-5 items-start pb-[3.5rem] ml-0 md:flex md:
+        flex-col md:items-center md:justify-center"
+        >
           <div className="flex justify-center items-center gap-2  ">
             <IoCall className="text-[#ff9637] text-[1rem] ml-12"></IoCall>
             <div>
