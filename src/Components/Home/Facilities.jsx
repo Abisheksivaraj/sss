@@ -9,21 +9,23 @@ import ncc from "../../assets/facilities/ncc.jpg";
 
 const Facilities = () => {
   return (
-    <div>
+    <div className="p-4">
       <div className="flex items-center justify-center mt-[5rem]">
-        <p className="font-semibold uppercase text-[1.5rem] text-[#f98d2f] underline">
+        <p className="font-semibold uppercase ml-5 text-[1.5rem] text-[#f98d2f] underline xl:text[1.8rem] 2xl:text[2rem]">
           Why Suguna
         </p>
       </div>
 
-      <div className=" flex place-items-center justify-center gap-10 mt-10">
+      <div className=" flex flex-col place-items-center justify-center gap-10 mt-10 ml-3 md:flex-row">
         <div>
           <img
             src={placement}
             alt=""
             className="h-[10rem] w-[10rem] border-[5px] rounded-full border-[#83acb0] p-1"
           />
-          <p className="text-center font-semibold text-[#f98d2f]">Placements</p>
+          <p className="text-center font-semibold text-[#f98d2f]  xl:text[1.5rem]">
+            Placements
+          </p>
         </div>
 
         <div>
@@ -32,7 +34,9 @@ const Facilities = () => {
             alt=""
             className="h-[10rem] w-[10rem] border-[5px] rounded-full border-[#83acb0] p-1"
           />
-          <p className="text-center font-semibold text-[#f98d2f]">Library</p>
+          <p className="text-center font-semibold text-[#f98d2f] xl:text[1.5rem]">
+            Library
+          </p>
         </div>
 
         <div>
@@ -41,7 +45,9 @@ const Facilities = () => {
             alt=""
             className="h-[10rem] w-[10rem] border-[5px] rounded-full border-[#83acb0] p-1"
           />
-          <p className="text-center font-semibold text-[#f98d2f]">Transport</p>
+          <p className="text-center font-semibold text-[#f98d2f] xl:text[1.5rem]">
+            Transport
+          </p>
         </div>
 
         <div>
@@ -50,7 +56,9 @@ const Facilities = () => {
             alt=""
             className="h-[10rem] w-[10rem] border-[5px] rounded-full border-[#83acb0] p-1"
           />
-          <p className="text-center font-semibold text-[#f98d2f]">Hostel</p>
+          <p className="text-center font-semibold text-[#f98d2f] xl:text[1.5rem]">
+            Hostel
+          </p>
         </div>
 
         <div>
@@ -59,7 +67,7 @@ const Facilities = () => {
             alt=""
             className="h-[10rem] w-[10rem] border-[5px] rounded-full border-[#83acb0] p-1"
           />
-          <p className="text-center font-semibold text-[#f98d2f]">
+          <p className="text-center font-semibold text-[#f98d2f] xl:text[1.5rem]">
             Anti Ragging
           </p>
         </div>
@@ -70,7 +78,9 @@ const Facilities = () => {
             alt=""
             className="h-[10rem] w-[10rem] border-[5px] rounded-full border-[#83acb0] p-1"
           />
-          <p className="text-center font-semibold text-[#f98d2f]">NCC</p>
+          <p className="text-center font-semibold text-[#f98d2f] xl:text[1.5rem]">
+            NCC
+          </p>
         </div>
       </div>
     </div>
