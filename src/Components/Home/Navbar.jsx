@@ -117,30 +117,48 @@ function Navbar() {
               </span>
 
               <ul
-                className={`flex-col bg-white w-full rounded-tl-none rounded-bl-md rounded-r-md p-2
+                className={`flex-col bg-white w-[13rem] text-[18px] rounded-tl-none rounded-bl-md rounded-r-md p-2
                 
                 md:absolute md:top-[2rem] md:bg-[#f8e4d2] 
                 ${activeDropDown === "AboutUs" ? "" : "hidden"}`}
               >
-                <li>Management</li>
-                <li>principal message</li>
-                <li>abi</li>
+                <li className="hover:text-[#f98d2f] text-[16px]">Management</li>
+                <li className="hover:text-[#f98d2f] text-[16px]">
+                  Principal message
+                </li>
+                <li className="hover:text-[#f98d2f] text-[16px]">Awards</li>
+                <li className="hover:text-[#f98d2f] text-[16px]">
+                  Professional Bodies
+                </li>
               </ul>
             </span>
+
             <span className="hover:text-[#f98d2f] flex  justify-start items-center gap-1 relative group">
               Departments <GoChevronDown onClick={toggleAcademicsDropDown} />
             </span>
             <ul
-              className={`bg-white items-center gap-2 w-full rounded-tl-none rounded-bl-md rounded-r-md p-2
+              className={`bg-white items-center gap-2 w-[35%] rounded-tl-none rounded-bl-md rounded-r-md p-2
               md:absolute md:top-[2rem] md:bg-[#f8e4d2] md:text-start md:left-[10rem]  md:rounded-tl-none md:rounded-bl-md md:rounded-r-md md:p-2
+              2xl:left-[22rem] 2xl:top-[2.8rem] 
+
               ${isAcademicsDropDownVisible ? "" : "hidden"}`}
             >
-              <li>Mechanical Engineering</li>
-              <li>Automobile Engineering</li>
-              <li>AI&ML</li>
-              <li>Electrical and Electronics Engineering</li>
-              <li>Electronics and Communication Engineering</li>
-              <li>Electrical and Electronics Engineering</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">
+                Mechanical Engineering
+              </li>
+              <li className="hover:text-[#f98d2f] text-[16px]">
+                Automobile Engineering
+              </li>
+              <li className="hover:text-[#f98d2f] text-[16px]">AI&ML</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">
+                Electrical and Electronics Engineering
+              </li>
+              <li className="hover:text-[#f98d2f] text-[16px]">
+                Electronics and Communication Engineering
+              </li>
+              <li className="hover:text-[#f98d2f] text-[16px]">
+                Electrical and Electronics Engineering
+              </li>
             </ul>
 
             <span className="hover:text-[#f98d2f] flex justify-start items-center gap-1 relative group">
@@ -153,10 +171,10 @@ function Navbar() {
               md:absolute md:top-[2rem] md:bg-[#f8e4d2] md:text-start md:left-[19rem]  md:rounded-tl-none md:rounded-bl-md md:rounded-r-md md:p-2
               ${isFacilitiesDropDownVisible ? "" : "hidden"}`}
             >
-              <li>Library</li>
-              <li>Transport</li>
-              <li>Hostel</li>
-              <li>NSS</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">Library</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">Transport</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">Hostel</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">NSS</li>
             </ul>
 
             <span className="hover:text-[#f98d2f] flex  justify-start items-center gap-1 relative group">
@@ -167,10 +185,10 @@ function Navbar() {
                 isEventsDropDownVisible ? "" : "hidden"
               }`}
             >
-              <li>Library</li>
-              <li>Transport</li>
-              <li>Hostel</li>
-              <li>NSS</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">Library</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">Transport</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">Hostel</li>
+              <li className="hover:text-[#f98d2f] text-[16px]">NSS</li>
             </ul>
 
             <span className="hover:text-[#f98d2f] flex  justify-start items-center gap-1 relative group">
